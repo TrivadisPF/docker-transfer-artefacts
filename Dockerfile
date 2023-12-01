@@ -7,9 +7,10 @@
 FROM alpine:latest
 
 COPY jdbc-drivers /libs/jdbc-drivers
+COPY ksqldb-udfs /libs/ksqldb-udfs
 
 # copy the generator script and make it executable
-COPY run.sh /usr/local/bin/
+COPY run.sh /usr/local/bin/jdbc
 RUN chmod +x /usr/local/bin/run.sh
 
 CMD run.sh
