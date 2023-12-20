@@ -9,6 +9,7 @@ FROM alpine:latest
 COPY jdbc-drivers /libs/jdbc-drivers
 COPY ksqldb-udfs /libs/ksqldb-udfs
 COPY nifi-nars /libs/nifi-nars
+COPY nifi-templates /libs/nifi-templates
 COPY config /config
 
 # copy the generator script and make it executable
